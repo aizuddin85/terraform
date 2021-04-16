@@ -68,6 +68,14 @@ variable "installer_instance" {
   }
 }
 
+variable "storage" {
+  default = {
+    oss = {
+      "bucket_name" = "my-bucket-name"
+    }
+  }
+}
+
 variable "pwaccess"  {
       type = string
       description = "Installer instance root password"

@@ -1,5 +1,5 @@
 resource "alicloud_oss_bucket" "bkt-ocp4" {
-  bucket = "bkt-ocp4-isomer2004"
+  bucket = var.storage.oss.bucket_name
   acl    = "private"
 }
 
